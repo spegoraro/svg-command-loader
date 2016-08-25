@@ -1,0 +1,47 @@
+{
+  "name": "svg-command-loader",
+  "version": "1.0.0",
+  "description": "Parses path data from an SVG and returns an array of commands.",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel -o index.js src/loader.js",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://dev.tutive.com/www/svg-command-loader.git"
+  },
+  "keywords": [
+    "svg",
+    "webpack",
+    "loader",
+    "tutive"
+  ],
+  "author": "Stephen Pegoraro <spegoraro@tutive.com>",
+  "license": "UNLICENSED",
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      "add-module-exports"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.10.4",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-es2015": "^6.9.0",
+    "eslint": "^3.0.1",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.10.2",
+    "eslint-plugin-jsx-a11y": "^1.5.5",
+    "eslint-plugin-react": "^5.2.2",
+    "js-beautify": "^1.6.3"
+  },
+  "dependencies": {
+    "svg-path-parser": "^1.0.1",
+    "xmldom": "^0.1.22"
+  },
+  "private": true
+}
